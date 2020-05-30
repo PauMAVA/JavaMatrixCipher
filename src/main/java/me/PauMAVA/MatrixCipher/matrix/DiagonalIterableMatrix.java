@@ -1,8 +1,6 @@
-package me.PauMAVA.MatrixCipher;
+package me.PauMAVA.MatrixCipher.matrix;
 
-import java.util.Iterator;
-
-public class DiagonalIterableMatrix<T> implements Iterable<T> {
+class DiagonalIterableMatrix<T> implements Iterable<T> {
 
     private T[][] matrix;
     private int size;

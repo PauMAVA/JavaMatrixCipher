@@ -1,8 +1,8 @@
-package me.PauMAVA.MatrixCipher;
+package me.PauMAVA.MatrixCipher.matrix;
 
 import java.util.Iterator;
 
-public interface RWIterator<T> extends Iterator<T> {
+interface RWIterator<T> extends Iterator<T> {
 
     default void setValueAndNext(T value) {
         setValue(value);

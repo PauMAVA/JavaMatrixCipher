@@ -1,4 +1,4 @@
-package me.PauMAVA.MatrixCipher;
+package me.PauMAVA.MatrixCipher.matrix;
 
 import java.util.Iterator;
 

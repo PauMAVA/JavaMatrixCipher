@@ -4,7 +4,7 @@
 
     <groupId>me.PauMAVA</groupId>
     <artifactId>MatrixCipher</artifactId>
-    <version>0.1.001-SNAPSHOT</version>
+    <version>0.1.003-SNAPSHOT</version>
 
     <build>
         <resources>

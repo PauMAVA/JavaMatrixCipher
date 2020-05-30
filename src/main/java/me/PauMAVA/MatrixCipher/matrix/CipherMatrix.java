@@ -32,7 +32,7 @@ public class CipherMatrix {
 
     private void setTextToIterator(RWIterator<Character> iterator, String text) {
         int k = 0;
-        while(iterator.hasNext() && k < size) {
+        while(iterator.hasNext() && k < text.length()) {
             iterator.setValueAndNext(text.charAt(k));
             k++;
         }
@@ -49,7 +49,8 @@ public class CipherMatrix {
     private String iteratorToString(Iterator<Character> iterator) {
         StringBuilder sb = new StringBuilder();
         while(iterator.hasNext()) {
-            sb.append(iterator.next());
+            Character character = iterator.next();
+            sb.append(character != null ? character : (char) 0);
         }
         return sb.toString();
     }

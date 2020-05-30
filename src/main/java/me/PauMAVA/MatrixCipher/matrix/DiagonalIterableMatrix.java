@@ -59,8 +59,8 @@ public class DiagonalIterableMatrix<T> implements Iterable<T> {
             @Override
             public T next() {
                 T var = matrix[i][j];
-                i++;
-                j++;
+                i = j == size -1 ? ++i: i;
+                j = j == size -1 ? 0 : ++j;
                 return var;
             }
 

@@ -13,7 +13,7 @@ First of all import the dependency and repository:
 <dependency>
     <groupId>me.PauMAVA</groupId>
     <artifactId>MatrixCipher</artifactId>
-    <version>1.0.0</version>
+    <version>0.1.003</version>
 </dependency>
 ```
 

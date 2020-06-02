@@ -30,7 +30,7 @@ String decrypted = MatrixCipherTools.decrypt("Hl ly eormealo mPVw,a A dnsM!  iuA
 ```
 
 ## How it works
-To understand the main two method of iterating a matrix that this library uses.
+First of all you need to understand the two methods of iterating a matrix that this library uses.
 ### Natural iteration (left to right and up to down)
 | \| | - | - | - | - | > |
 |----|---|---|---|---|---|
@@ -59,10 +59,10 @@ The text to be encrypted is written diagonally in a Character matrix:
 | d | a |   | A |   |   |
 | n | s | M |   |   |   |
 
-Then the text is then read in a natural reading order (left to right and up to down). 
+Then the text is read in a natural reading order (left to right and up to down). 
 
 ### Decryption process
 The text to be decrypted is written naturally in a Character matrix.
-Then the text is then read diagonally. 
+Then the text is read diagonally. 
 
 

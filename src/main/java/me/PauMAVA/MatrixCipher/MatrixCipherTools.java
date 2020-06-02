@@ -16,7 +16,7 @@ public class MatrixCipherTools {
     public static String decrypt(String encrypted) {
         CipherMatrix cipherMatrix = new CipherMatrix(encrypted.length());
         cipherMatrix.setNaturalText(encrypted);
-        return cipherMatrix.readDiagonally();
+        return cipherMatrix.readDiagonally().replace("\0","");
     }
 
 

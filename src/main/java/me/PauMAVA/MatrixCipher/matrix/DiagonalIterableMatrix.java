@@ -40,6 +40,11 @@ class DiagonalIterableMatrix<T> implements Iterable<T> {
                 }
                 return var;
             }
+
+            @Override
+            public int[] current() {
+                return new int[]{i, j};
+            }
         };
     }
 
@@ -60,6 +65,11 @@ class DiagonalIterableMatrix<T> implements Iterable<T> {
                 i = j == size -1 ? ++i: i;
                 j = j == size -1 ? 0 : ++j;
                 return var;
+            }
+
+            @Override
+            public int[] current() {
+                return new int[]{i, j};
             }
 
             @Override

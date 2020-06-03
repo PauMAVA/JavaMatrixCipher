@@ -121,4 +121,15 @@ public class RoundTripTests {
         }
     }
 
+    @Test
+    public void roundTripTestAdvanced() {
+        for (String original: strings) {
+            String encrypted = MatrixCipherTools.encrypt(original, true);
+            assertNotEquals(original, encrypted);
+            String decrypted = MatrixCipherTools.decrypt(encrypted, true);
+            assertEquals(decrypted, original);
+            System.out.println("Original: " + original + "\n" + "Encrypted: " + encrypted + "\n" + "Decrypted: " + decrypted + "\n========================================================");
+        }
+    }
+
 }

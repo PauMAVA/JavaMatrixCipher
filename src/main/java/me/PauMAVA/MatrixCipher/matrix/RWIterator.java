@@ -9,6 +9,8 @@ interface RWIterator<T> extends Iterator<T> {
         next();
     };
 
+    int[] current();
+
     void setValue(T value);
 
 }

@@ -66,3 +66,14 @@ The text to be decrypted is written naturally in a Character matrix.
 Then the text is read diagonally. 
 
 
+## Advanced mdoe
+By enabling advanced mode an extra step will be added to the encryption/decryption process. 
+1. Every `char` will be converted to an `int`.
+2. A number corresponding to the multiplication of the coordinates in the matrix of the `char` will be added to the `int` code in a circular range between 48 and 125.
+3. The `int` will be converted to a `char`.
+
+To use advanced encryption/decryption:
+```java
+MatrixCipherTools.encrypt("Your text", true);
+MatrixCipherTools.decrypt("Your text", true);
+```
